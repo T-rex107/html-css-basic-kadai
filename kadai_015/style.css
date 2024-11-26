@@ -43,3 +43,6 @@ p {
 #basic .bold-text {
   font-weight: bold;
 }
+#basic p {
+  font-weight: bold;
+}
