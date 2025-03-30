@@ -25,26 +25,23 @@ main {
   justify-content: space-between;
 }
 
-.content {
-  border: 3px solid rgb(238, 204, 204);
+.contents {
+  border: 3px solid rgb(238, 204, 204); /* 枠線を追加 */
+  padding: 10px 15px; /* 内側の余白 */
+  margin: 10px 0; /* 外側の余白 */
+  text-align: center; /* 中央揃え */
   flex-basis: 25%;
-  padding: 10px 15px;
-  margin: 20px 0;
-  text-align: center;
 }
+
 
 h2 {
   font-size: 25px;
   border-bottom: 3px dotted rgb(236, 122, 122);
-  position: relative;
-  padding-left: 20px;
 }
 
 h2::before {
   content: "●";
   color: rgb(239, 111, 139);
-  position: absolute;
-  left: 120px;
 }
 
 .contents p:nth-of-type(2)::first-letter {
@@ -57,19 +54,6 @@ h2::before {
   width: 70%;
 }
 
-.contents {
-  border: 3px solid rgb(238, 204, 204); /* 枠線を追加 */
-  padding: 10px 15px; /* 内側の余白 */
-  margin: 10px 0; /* 外側の余白 */
-  text-align: center; /* 中央揃え */
-}
-
-#parent {
-  display: flex;
-  justify-content: space-between; 
-  gap: 20px; /* 要素間の余白 */
-}
-
 footer {
   background-color: rgb(244, 79, 79);
   text-align: center;
@@ -79,7 +63,7 @@ footer a {
   color: rgb(255, 255, 255);
 }
 
-footer a :visited {
+footer a:visited {
   rgb(193, 234, 251)
 }
 
